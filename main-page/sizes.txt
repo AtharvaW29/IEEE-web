@@ -1,0 +1,3 @@
+footer map size
+w:300
+h:201

@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+  }
+  .container{
+    width:900px;
+    margin:0px auto;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 0 5px;
+  }
+  .row {
+    margin: 0 -10px;
+    
+}
+
+  .row:after {
+    content: "";
+    display: table-row;
+    clear: both;
+    padding: auto;
+    margin: 10px;
+  }
+
+  @media screen and (max-width: 700px) {
+    
+    .container{
+     width: 100%;
+   }
+     
+     .column {
+       width: 100%;
+       display: block;
+       margin-bottom: 20px;
+     }
+   }
+
+   .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(110, 171, 240);
+    border-radius:10px;
+    cursor:pointer;
+    margin: 20px;
+  }
+  .card .profile{
+     border-radius:10px;
+     transition: 0.2s;
+  }
+  .card:hover .profile{
+    transform:scale(1.4);
+    border-top-right-radius:50px;
+    border-top-left-radius:50px;
+  }
+  
+  .card .content{
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+  }
+  .card .content .back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #f1f1f1e6;
+    transition:1s;
+    
+    z-index:1;
+    padding:10px;
+  }
+  
+  .from-left{
+    top:0;
+    left:-100%;
+  }
+  .card:hover .content .from-left {
+     left:0%;
+  }
+
+   
+  .from-bottom{
+    top:100%;
+    left:0;
+  }
+  .card:hover .content .from-bottom {
+     top:0%;
+  }
+
+  .from-right{
+    top:0;
+    right: -100%;
+  }
+
+  .card:hover .content .from-right{
+    right: 0%;
+  }
+   
+  .card .content .back h3{
+    font-size:20px;
+    letter-spacing:2px;
+    text-align: center;
+  }
+  .card .content .back .social-icon li{
+    display:inline-block;
+    list-style: none;
+	margin: 0 5px;
+	float: left;
+  }
+  
+  .card .content .back .social-icon li a{
+    display:block;
+    background:#333;
+    color:#fff;
+    width:40px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    border-radius:100%;
+
+    
+  }
+
+  .card .content .back .social-icon li a:hover{
+    background: rgb(110, 171, 240);
+  }
+
+  .team-container
+{
+    width: 900px;
+    height: 299px;
+    margin: 10px;
+    float: left; /* stack each div horizontally */
+}
+
+img
+{
+   border-radius: 10px;
+}
+
+.team-back h2
+{
+    position: absolute;
+}
+
+.team-back p
+{
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+}
+
+.team-front h2
+{
+    position: absolute;
+    padding: 10px;
+    top: 200px;
+    color: #000;
+}
+
+/* style the maincontainer class with all child div's of class .front */
+.team-container > .team-front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.team-container > .team-back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+    width: 302px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+.team-container:hover > .team-front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.team-container:hover > .team-back
+{
+    transform: perspective(600px) rotateY(0deg);
+}

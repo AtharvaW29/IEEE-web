@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FAVICON -->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/Images/favicon/site.webmanifest">
 <title>contact-form</title>
 <!--CSS-->
 <link href="./contactform.css" rel="stylesheet"/>
@@ -34,62 +34,82 @@
 	<nav class="navbar navbar-expand-lg fixed-top">
 	  <div class="container-fluid">
 		<a class="navbar-brand" href="#">
-		  <img src="./" class="img-fluid" alt="logo2"> 
+		  <img src="../assets/Images/Component1.png" class="img-fluid" alt="logo2"> 
 	   </a>
-		<button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-		  data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-		  aria-label="Toggle navigation">
-		  <i class="fas fa-bars"></i>
-		</button>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa-solid fa-bars-staggered"></i></span>
+      <!-- <i class="fa-solid fa-bars-staggered"></i> -->
+    </button>
 		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 		  <ul class="navbar-nav menu-navbar-nav">
 			<li class="nav-item">
-			  <a class="nav-link" href="http://127.0.0.1:5501/index.html"><h5>Home</h5></a>
+			  <a class="nav-link" href="../index.html"><h5>Home</h5></a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="http://127.0.0.1:5501/index.html#about"><h5>About</h5></a>
+			  <a class="nav-link" href="../index.html#about"><h5>About</h5></a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#!"><h5>Team</h5></a>
+			  <a class="nav-link" href="../team/teams.html"><h5>Team</h5></a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#!"><h5>Events</h5></a>
+			  <a class="nav-link" href="../events/events.html"><h5>Events</h5></a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#!"><h5>Legacy</h5></a>
+			  <a class="nav-link" href="../legacy/legacy.html"><h5>Legacy</h5></a>
 			</li>
 			<li class="nav-item">
 				<button class="contact-button">
 			  <a class="nav-link" href="#!"><h5>Contact</h5></a> </button>
 			</li>
 		  </ul>
-		  <ul class="navbar-nav d-flex flex-row">
-			<li class="nav-item me-3 me-lg-0">
-			  <a class="nav-link" href="#!">
-				<i class="fa fa-linkedin"></i>
-			  </a>
-			</li>
-			<li class="nav-item me-3 me-lg-0">
-			  <a class="nav-link" href="#!">
-				<i class="fab fa-twitter"></i>
-			  </a>
-			</li>
-			<li class="nav-item me-3 me-lg-0">
-			  <a class="nav-link" href="#!">
-				<i class="fab fa-instagram"></i>
-			  </a>
-			</li>
-			<li class="nav-item me-3 me-lg-0">
-			  <a class="nav-link" href="#!">
-				<i class="fab fa-facebook"></i>
-			  </a>
-			</li>
-		  </ul>
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="https://www.linkedin.com/company/ieee-kjsieit/about/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="https://mobile.twitter.com/ieee_kjsieit">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="https://www.instagram.com/ieee.kjsieit/?hl=en">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="https://www.facebook.com/IEEEKJSIEIT/">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
 		</div>
 	  </div>
 	</nav>
 	<!-- Navbar -->
   </header>
+
+  <script>
+    let nav = document.querySelector(".navbar");
+window.onscroll = function () {
+if(document.documentElement.scrollTop > 20){
+nav.classList.add("header-scrolled");
+}
+else{
+nav.classList.remove("header-scrolled");
+}
+}
+
+// Menu Hide
+let navBar= document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function(a){
+a.addEventListener("click", function(){
+navCollapse.classList.remove("show");
+})
+})
+</script>
   <!--Nav-End-->
 
 
@@ -110,21 +130,22 @@
 				<span>CONTACT</span>
 				<span>US</span>
 			  </div>
-			  <div class="app-contact">CONTACT INFO : ieee@somaiya.edu</div>
+			  <div class="app-contact">CONTACT INFO : ieee.tech@somaiya.edu</div>
 			</div>
 			<div class="screen-body-item">
-			  <form class="app-form" method="get" action="">
+			  <form class="app-form" action="https://formspree.io/f/xnqyjebd"
+        method="POST">
 				<div class="app-form-group">
-				  <input class="app-form-control" placeholder="Name">
+				  <input class="app-form-control" placeholder="Name" name="Name">
 				</div>
 				<div class="app-form-group">
-				  <input class="app-form-control" placeholder="email">
+				  <input class="app-form-control" placeholder="email" name="email">
 				</div>
 				<div class="app-form-group">
-				  <input class="app-form-control" placeholder="subject">
+				  <input class="app-form-control" placeholder="subject" name="subject">
 				</div>
 				<div class="app-form-group message">
-				  <input class="app-form-control" placeholder="message">
+				  <input class="app-form-control" placeholder="message" name="message">
 				</div>
 				<div class="app-form-group buttons">
 				  <button class="app-form-button">SUBMIT</button>
@@ -136,10 +157,10 @@
 
 	<div class="card">
         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="images">
+            <img src="../assets/Images/team-img/IEEE2022-23.jpg" alt="images">
         </div>
         <div class="details">
-            <h2>SomeOne Famous<br><span>Director</span></h2>
+            <h2>IEEE<br><span>KJSIT</span></h2>
         </div>
       </div>
 	  </div>
@@ -158,30 +179,30 @@
                  >
           <!-- Left -->
           <div class="me-5">
-            <span>Get connected with us on social networks:</span>
+            <span>Follow Us On:</span>
           </div>
           <!-- Left -->
     
           <!-- Right -->
           <div>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-white me-4">
+            <a href="https://www.linkedin.com/company/ieee-kjsieit/about/" class="text-white me-4">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-github"></i>
+            <a href="https://mobile.twitter.com/ieee_kjsieit" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
             </a>
+            <!-- <a href="#" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a> -->
+            <a href="https://www.instagram.com/ieee.kjsieit/?hl=en" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/IEEEKJSIEIT/" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- <a href="#" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a> -->
           </div>
           <!-- Right -->
         </section>
@@ -195,16 +216,16 @@
               <!-- Grid column -->
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
-                <h6 class="text-uppercase fw-bold">IEEE-KJSIEIT</h6>
+                <h6 class="text-uppercase fw-bold">IEEE-KJSIT</h6>
                 <hr
                     class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px"
                     />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
+                    <p style="font-size: 14px;">
+                      KJSIT offers various programs, courses and degrees. Start your journey
+                      by finding the right one for you. Browse through and choose your calling,
+                      we are here to provide you with the best education.
+                    </p>
               </div>
     
               <!-- Grid column -->
@@ -215,21 +236,21 @@
                     class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px"
                     />
-                <p>
-                  <a href="http://127.0.0.1:5501/index.html#home" class="text-white">Home</a>
-                </p>
-                <p>
-                  <a href="http://127.0.0.1:5501/index.html#about" class="text-white">About</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-white">Team</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-white">Events</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-white">Legacy</a>
-                </p>
+                    <p>
+                      <a href="../index.html" class="text-white" style="font-size: 14px; font-family: poppins;">Home</a>
+                    </p>
+                    <p>
+                      <a href="../index.html#about" class="text-white" style="font-size: 14px; font-family: poppins;">About</a>
+                    </p>
+                    <p>
+                      <a href="../team/teams.html" class="text-white" style="font-size: 14px; font-family: poppins;">Team</a>
+                    </p>
+                    <p>
+                      <a href="../events/events.html" class="text-white" style="font-size: 14px; font-family: poppins;">Events</a>
+                    </p>
+                    <p>
+                      <a href="../legacy/legacy.html" class="text-white" style="font-size: 14px; font-family: poppins;">Legacy</a>
+                    </p>
               </div>
               <!-- Grid column -->
     
@@ -242,15 +263,15 @@
                     style="width: 60px; background-color: #7c4dff; height: 2px"
                     />
                     <p>
-                      <a href="http://127.0.0.1:5501/contact-form/contact_form.html#!" class="text-white">Contact Us</a>
+                      <a href="../contact-form/contact_form.html" class="text-white">Contact Us</a>
                     </p>
                 <p><i class="fas fa-envelope mr-3"></i>ieee.tech@somaiya.edu</p>
-                <p><i class="fas fa-phone mr-3"></i> No.1</p>
-                <p><i class="fas fa-phone mr-3"></i> No.2</p>
+                <!-- <p><i class="fas fa-phone mr-3"></i> No.1</p>
+                <p><i class="fas fa-phone mr-3"></i> No.2</p> -->
               </div>
               <!-- Grid column -->
               <div class="my-3 mb-lg-0" style="width:400px">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4018163827604!2d72.86889221537538!3d19.046063057861105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf21727f6e19%3A0x473006136ad440dc!2sK.%20J.%20Somaiya%20Institute%20of%20Engineering%20and%20Information%20Technology!5e0!3m2!1sen!2sin!4v1662920715713!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4018163827604!2d72.86889221537538!3d19.046063057861105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf21727f6e19%3A0x473006136ad440dc!2sK.%20J.%20Somaiya%20Institute%20of%20Engineering%20and%20Information%20Technology!5e0!3m2!1sen!2sin!4v1662920715713!5m2!1sen!2sin" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
             <!-- Grid row -->
@@ -263,7 +284,7 @@
              class="text-center p-3"
              style="background-color: rgba(0, 0, 0, 0.2)"
              >
-          © IEEE-KJSIEIT 2022 All rights reserved.
+          © IEEE-KJSIT 2022 All rights reserved.
         </div>
         <!-- Copyright -->
       </footer>

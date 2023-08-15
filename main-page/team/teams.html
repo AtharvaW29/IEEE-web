@@ -3,178 +3,1018 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Teams</title>
+
+          <!-- FAVICON -->
+    
+          <link rel="apple-touch-icon" sizes="180x180" href="../assets/Images/favicon/apple-touch-icon.png">
+          <link rel="icon" type="image/png" sizes="32x32" href="../assets/Images/favicon/favicon-32x32.png">
+          <link rel="icon" type="image/png" sizes="16x16" href="../assets/Images/favicon/favicon-16x16.png">
+          <link rel="manifest" href="../assets/Images/favicon/site.webmanifest">
+  <style>
+    /* width */
+::-webkit-scrollbar {
+width: 10px;
+background-color: #F5F5F5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+background-color: #F5F5F5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-color: #F90;	
+background-image: -webkit-linear-gradient(45deg,
+                                          rgba(255, 255, 255, .2) 25%,
+                      transparent 25%,
+                      transparent 50%,
+                      rgba(255, 255, 255, .2) 50%,
+                      rgba(255, 255, 255, .2) 75%,
+                      transparent 75%,
+                      transparent)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+  </style>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
-	
-    <div class="container">
-        <center><h1>Core</h1></center>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" src="images/f.jpg">
-                        </div>
-                        <div class="back from-left">
-                                <h3>Name<br><span>Position</span></h3>
-                                <ul class="social-icon">
-                                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" src="images/f.jpg">
-                        </div>
-                        <div class="back from-bottom">
-                                <h3>Name<br><span>Position</span></h3>
-                                <ul class="social-icon">
-                                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" src="images/f.jpg">
-                        </div>
-                        <div class="back from-right">
-                                <h3>Name<br><span>Position</span></h3>
-                                <ul class="social-icon">
-                                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" src="images/f.jpg">
-                        </div>
-                        <div class="back from-left">
-                                <h3>Name<br><span>Position</span></h3>
-                                <ul class="social-icon">
-                                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" src="images/f.jpg">
-                        </div>
-                        <div class="back from-bottom">
-                                <h3>Name<br><span>Position</span></h3>
-                                <ul class="social-icon">
-                                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" src="images/f.jpg">
-                        </div>
-                        <div class="back from-right">
-                                <h3>Name<br><span>Position</span></h3>
-                                <ul class="social-icon">
-                                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+    <!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!--Responsive-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Icons-->
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <header class="header_wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="top-nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/Images/Component1.png" class="img-fluid" alt="logo2"> 
+           </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            <!-- <i class="fa-solid fa-bars-staggered"></i> -->
+          </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav menu-navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html"><h5>Home</h5></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html"><h5>About</h5></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!"><h5>Team</h5></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../events/events.html"><h5>Events</h5></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../legacy/legacy.html"><h5>Legacy</h5></a>
+                </li>
+                <li class="nav-item">
+                  <button class="contact-button">
+                  <a class="nav-link" href="../contact-form/contact_form.html"><h5>Contact</h5></a> </button>
+                </li>
+              </ul>
+              <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item me-3 me-lg-0">
+                  <a class="nav-link" href="https://www.linkedin.com/company/ieee-kjsieit/about/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                  <a class="nav-link" href="https://mobile.twitter.com/ieee_kjsieit">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                  <a class="nav-link" href="https://www.instagram.com/ieee.kjsieit/?hl=en">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                  <a class="nav-link" href="https://www.facebook.com/IEEEKJSIEIT/">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+      </header>
+
+      <script>
+                  let nav = document.querySelector(".navbar");
+window.onscroll = function () {
+    if(document.documentElement.scrollTop > 20){
+        nav.classList.add("header-scrolled");
+    }
+    else{
+        nav.classList.remove("header-scrolled");
+    }
+}
+
+// Menu Hide
+let navBar= document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function(a){
+    a.addEventListener("click", function(){
+        navCollapse.classList.remove("show");
+    })
+})
+      </script>
+      <!--Nav-End-->
+	<section class="core_wrapper" id="core">
+    <center><h1>CORE</h1></center>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+            <div class="front">
+                <img class="profile" src="../assets/Images/team-img/core/Varun Dixit (1).jpeg">
+            </div>
+            <div class="back from-bottom">
+                    <h3>Varun Dixit<br><span style="color: #F84312;">Chairperson</span></h3>
+                  
+                    
+            </div>
         </div>
     </div>
-    
-	
-    <div class="container">
-        <center><h1>Sub-Core</h1></center>
-        <div class="row">
-            <div class="column">
+            
+    <div class="card">
+      <div class="content">
+          <div class="front">
+              <img class="profile" src="../assets/Images/team-img/core/Simran_Sinha (1).jpeg">
+          </div>
+          <div class="back from-bottom">
+                  <h3>Simran Sinha<br><span style="color: #F84312;">Vice Chairperson</span></h3>
+           
+                  
+          </div>
+      </div>
+  </div>
+          
                 <div class="card">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" src="images/f.jpg">
-                        </div>
-                        <div class="back from-left">
-                                <h3>Name<br><span>Position</span></h3>
-                                <ul class="social-icon">
-                                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                                
-                        </div>
+                  <div class="content">
+                      <div class="front">
+                          <img class="profile" src="../assets/Images/team-img/core/Vivek Bhadra (1).jpg">
+                      </div>
+                      <div class="back from-bottom">
+                              <h3>Vivek Bhadra<br><span style="color: #F84312;">Secretary</span></h3>
+                           
+                              
+                      </div>
+                  </div>
+              </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="front">
+                          <img class="profile" src="../assets/Images/team-img/core/Pragathi_Mahale (1).jpg">
+                      </div>
+                      <div class="back from-bottom">
+                              <h3>Pragathi Mahale<br><span style="color: #F84312;">Treasurer</span></h3>
+                             
+                              
+                      </div>
+                  </div>
+              </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="front">
+                          <img class="profile" src="../assets/Images/team-img/core/Pratik Gangapurwala (1).jpg">
+                      </div>
+                      <div class="back from-bottom">
+                              <h3>Pratik Gangapurwala<br><span style="color: #F84312;">CTO</span></h3>
+                           
+                              
+                      </div>
+                  </div>
+              </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="front">
+                          <img class="profile" src="../assets/Images/team-img/core/Harsh_Koli (1).jpg">
+                      </div>
+                      <div class="back from-bottom">
+                              <h3>Harsh Koli<br><span style="color: #F84312;">CEO</span></h3>
+                             
+                              
+                      </div>
+                  </div>
+              </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="front">
+                          <img class="profile" src="../assets/Images/team-img/core/Aditya_kulkarni (1).jpg">
+                      </div>
+                      <div class="back from-bottom">
+                              <h3>Aditya Kulkarni<br><span style="color: #F84312;">CEO</span></h3>
+                            
+                              
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                    <div class="front">
+                        <img class="profile" src="../assets/Images/team-img/core/Namita Birari (1).jpg">
+                    </div>
+                    <div class="back from-bottom">
+                            <h3>Namita Birari<br><span style="color: #F84312;">PRO</span></h3>
+                          
+                            
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="card">
+            <div class="card">
+              <div class="content">
+                  <div class="front">
+                      <img class="profile" src="../assets/Images/team-img/core/bhavik_kapoor (1).jpg">
+                  </div>
+                  <div class="back from-bottom">
+                          <h3>Bhavik Kapoor<br><span style="color: #F84312;">DMM</span></h3>
+                          
+                  </div>
+              </div>
+          </div>
+</div>
+    </section>
+    
+	<section class="sub-core_wrapper" id="subcore">
+    <center><h1>SUB CORE</h1></center>
+    <div class="container">
+                <div class="card" >
                     <div class="content">
                         <div class="front">
-                            <img class="profile" src="images/f.jpg">
+                            <img class="profile" src="../assets/Images/team-img/sub-core/Vaishnav Duraphe.jpg">
                         </div>
                         <div class="back from-bottom">
-                                <h3>Name<br><span>Position</span></h3>
-                                <ul class="social-icon">
-                                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
+                                <h3>Vaishnav Durhape<br><span style="color:#F84312;">Jt. CEO</span></h3>
                                 
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="front">
+                          <img class="profile" src="../assets/Images/team-img/sub-core/Teertharaj_Haldar_jt.Treasurer (1).jpg">
+                      </div>
+                      <div class="back from-bottom">
+                              <h3>Teertharaj Haldar<br><span style="color: #F84312;">Jt.Treasurer</span></h3>
+
+                              
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                    <div class="front">
+                        <img class="profile" src="../assets/Images/team-img/sub-core/MihirParab_jtCTO (1).jpg">
+                    </div>
+                    <div class="back from-bottom">
+                            <h3>Mihir Parab<br><span style="color: #F84312;">Jt.CTO</span></h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="front">
+                      <img class="profile" src="../assets/Images/team-img/sub-core/Aashima_Singh_JT.PRO (1).jpeg">
+                  </div>
+                  <div class="back from-bottom">
+                          <h3>Ashima Singh<br><span style="color: #F84312;">Jt.PRO</span></h3>
+
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img class="profile" src="../assets/Images/team-img/sub-core/Aditya More Jt pro (1).jpg">
+                </div>
+                <div class="back from-bottom">
+                        <h3>Aditya More<br><span style="color: #F84312;">Jt. PRO</span></h3>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="front">
+                  <img class="profile" src="../assets/Images/team-img/sub-core/Raj_Shinde_Jt_CEO.jpg">
+              </div>
+              <div class="back from-bottom">
+                      <h3>Raj Shinde<br><span style="color: #F84312;">Jt. CEO</span></h3>
+                      
+              </div>
+          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+            <div class="front">
+                <img class="profile" src="../assets/Images/team-img/sub-core/VishalVijayan.png">
+            </div>
+            <div class="back from-bottom">
+                    <h3>Vishal Vijayan<br><span style="color: #F84312;">Jt. CEO</span></h3>
+            </div>
+        </div>
+    </div>
+                
             </div>
     </div>
-    <div class="team-container">
-        <center><h1>Teams</h1></center>
-        <div class="team-back">
-            <p>Team Member names go here</p>
+    </div>
+    </section>
+    <section class="admin_wrapper" id="admin">
+      <center><h1>ADMINS</h1></center>
+      <div class="container">
+                  <div class="card" >
+                      <div class="content">
+                          <div class="front">
+                              <img class="profile" src="../assets/Images/team-img/admins/AtharvaWagh_Admin_Tech.jpg">
+                          </div>
+                          <div class="back from-bottom">
+                                  <h3>Atharva Wagh<br><span style="color: #F84312;">Tech Admin</span></h3>
+                                  
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" src="../assets/Images/team-img/admins/Kevin-OrgAdmin (1).jpg">
+                        </div>
+                        <div class="back from-bottom">
+                                <h3>Kevin Mudaliar<br><span style="color: #F84312;">Organizing Admin</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="front">
+                          <img class="profile" src="../assets/Images/team-img/admins/RIyaShah_MarketingAdmin (1).jpg">
+                      </div>
+                      <div class="back from-bottom">
+                              <h3>Riya Shah<br><span style="color: #F84312;">Marketing Admin</span></h3>
+                              
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                    <div class="front">
+                        <img class="profile" src="../assets/Images/team-img/admins/KartikHegde.png">
+                    </div>
+                    <div class="back from-bottom">
+                            <h3>Kartik Hegde<br><span style="color: #F84312;">Publicity Admin</span></h3>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="front">
+                      <img class="profile" src="../assets/Images/team-img/admins/Anurag.jpg - Anurag patil.jpg" style="width:330px; height: 413px;">
+                  </div>
+                  <div class="back from-bottom">
+                          <h3>Anurag Patil<br><span style="color: #F84312;">Creative Admin</span></h3>
+                          
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img class="profile" src="../assets/Images/team-img/admins/VatsalGandhi.png" style="width:330px; height: 413px;">
+                </div>
+                <div class="back from-bottom">
+                        <h3>Vatsal Gandhi<br><span style="color: #F84312;">DMM Admin</span></h3>
+                        
+                </div>
+            </div>
         </div>
-        <div class="team-front">
-            <div class="image">
-                <img src="./images/f.jpg">
-                <h2> Team Name</h2>
+                  
+              </div>
+      </div>
+      </div>
+      </section>
+
+      <section class="jointadmin_wrapper" id="jtadmin">
+        <center><h1>JOINT ADMINS</h1></center>
+        <div class="container">
+                    <div class="card" >
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" src="../assets/Images/team-img/joint-admins/Himanshu_Halbe_Jt. Admin_Technical (1).png">
+                            </div>
+                            <div class="back from-bottom">
+                                    <h3>Himanshu Halbe<br><span style="color: #F84312;">Tech Jt.Admin</span></h3>
+
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="front">
+                              <img class="profile" src="../assets/Images/team-img/joint-admins/jimit_jointadmin.jpg" style="height: 413px; width: 290px;">
+                          </div>
+                          <div class="back from-bottom">
+                                  <h3>Jimit Parmar<br><span style="color: #F84312;">DMM Jt. Admin</span></h3>
+
+                                  
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" src="../assets/Images/team-img/joint-admins/SarveshKulkarni.png" style="height: 413px;">
+                        </div>
+                        <div class="back from-bottom">
+                                <h3>Sarvesh Kulkarni<br><span style="color: #F84312;">Tech Team Jt. Admin</span></h3>
+
+                                
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="front">
+                          <img class="profile" src="../assets/Images/team-img/joint-admins/IAryaa ChandanshiveMarketingJt.jpg" style="height: 413px; width: 330px;">
+                      </div>
+                      <div class="back from-bottom">
+                              <h3>Aarya Chandanshive<br><span style="color: #F84312;">Marketing Jt. Admin</span></h3>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                    <div class="front">
+                        <img class="profile" src="../assets/Images/team-img/joint-admins/SahilRana.png" style="height: 413px;">
+                    </div>
+                    <div class="back from-bottom">
+                            <h3>Sahil Rana<br><span style="color: #F84312;">Marketing Jt. Admin</span></h3>
+
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="front">
+                      <img class="profile" src="../assets/Images/team-img/joint-admins/ANUSHKA PAWAR_Jt. Publicity Admin  (1).jpg">
+                  </div>
+                  <div class="back from-bottom">
+                          <h3>Anushka Pawar<br><span style="color: #F84312;">Publicity Jt. Admin</span></h3>
+
+                          
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img class="profile" src="../assets/Images/team-img/joint-admins/KruplaiThakur.png">
+                </div>
+                <div class="back from-bottom">
+                        <h3>Krupali Thakur<br><span style="color: #F84312;">Publicity Jt. Admin</span></h3>
+
+                        
+                </div>
+            </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="front">
+                  <img class="profile" src="../assets/Images/team-img/joint-admins/SakshiUpadhyay.jpg" style="height: 413px; width: 310px;">
+              </div>
+              <div class="back from-bottom">
+                      <h3>Sakshi Upadhyay<br><span style="color: #F84312;">Creative Team Jt.Admin</span></h3>
+
+                      
+              </div>
+          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+            <div class="front">
+                <img class="profile" src="../assets/Images/team-img/joint-admins/SrushtiArban.png">
+            </div>
+            <div class="back from-bottom">
+                    <h3>Srushti Arban<br><span style="color: #F84312;">Creative Team Jt.Admin</span></h3>
+
+                    
             </div>
         </div>
     </div>
+    <div class="card">
+      <div class="content">
+          <div class="front">
+              <img class="profile" src="../assets/Images/team-img/joint-admins/HarshGite.jpg" style="height: 413px; width: 330px;">
+          </div>
+          <div class="back from-bottom">
+                  <h3>Harsh Gite<br><span style="color: #F84312;">Organizing Jt. Admin</span></h3>
+
+                  
+          </div>
+      </div>
+  </div> 
+  <div class="card" >
+    <div class="content">
+        <div class="front">
+            <img class="profile" src="../assets/Images/team-img/joint-admins/Yash Damani (1).jpg" style="height: 413px; width: 330px;">
+        </div>
+        <div class="back from-bottom">
+                <h3>Yash Damani<br><span style="color: #F84312;">Organizing Jt. Admin</span></h3>
+
+                
+        </div>
+    </div>
+</div>
+</div>
+
+        </section>
+
+
+<section class="team_wrapper" id="teams">
+  <center><h1>Teams</h1></center>
+<div class="team_container">
+  <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Shubham Bhardwaj</h5></li>
+       <li><h5>Sahil Kumar</h5></li>
+       <li><h5>Saraswat Sapkal</h5></li>
+       <li><h5>Piyush Gopalkar</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Technical</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Chaitrish Gowda</h5></li>
+       <li><h5>Rushikesh Kadam</h5></li>
+       <li><h5>Kamran Khot</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Technical</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Abbas Najmi</h5></li>
+       <li><h5>Aryan Bhatt</h5></li>
+       <li><h5>Sujit Ambole</h5></li>
+       <li><h5>Puvvada Krishna</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Organizing</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Sumeet Rajak</h5></li>
+       <li><h5>Harsh Deshmukh</h5></li>
+       <li><h5>Jeneel Narodia</h5></li>
+       <li><h5>Shubh Dave</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Organizing</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Sourabh Patil</h5></li>
+       <li><h5>Prathamesh Awate</h5></li>
+       <li><h5>Aditya Khedekar</h5></li>
+       <li><h5>Piyush Pingalkar</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Organizing</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Ruchi Jha</h5></li>
+       <li><h5>Siddhesh Chavan</h5></li>
+       <li><h5>Vinit Harne</h5></li>
+       <li><h5>Harivansh Parmeshwar</h5></li>
+
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Marketing</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Srishti Singh</h5></li>
+       <li><h5>Ved Trivedi</h5></li>
+       <li><h5>Kshitij Gaikwad</h5></li>
+       <li><h5>Harsh Amin</h5></li>
+       <li><h5>Abhishek Alandikar</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Marketing</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Roshni Bhanushali</h5></li>
+       <li><h5>Mitali Javdekar</h5></li>
+       <li><h5>Rahul Pandharkar</h5></li>
+       <li><h5>Rajas Chaudhari</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Publicity</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Bhaskar Chavan</h5></li>
+       <li><h5>Sachin Shajikumar</h5></li>
+       <li><h5>Tamanna Nandiwale</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Publicity</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+     
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Anushka Patil</h5></li>
+       <li><h5>Shivam Bhatt</h5></li>
+       <li><h5>Sakshi Shelar</h5></li>
+       <li><h5>Sakina Sapatwala</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Creative</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+
+   <div class="team_card">
+
+    <div class="card__side card__side--back">
+     <div class="card__cover">
+      <h4 class="card__heading">
+       <span class="card__heading-span"><h3 style="color: #F5F5F5;">Members</h3></span>
+      </h4>
+     </div>
+     <div class="card__details">
+      <ul>
+       <li><h5>Mohit Patel</h5></li>
+       <li><h5>Mehul Nasare</h5></li>
+       <li><h5>Darshan Sarode</h5></li>
+       <li><h5>Atharva Sawant</h5></li>
+      </ul>
+     </div>
+    </div>
+  
+    <div class="card__side card__side--front">
+     <div class="card__theme">
+      <div class="card__theme-box">
+       <p class="card__subject">IEEE-KJSIT</p>
+       <p class="card__title">Digital</p>
+       <p class="card__title">Media</p>
+       <p class="card__title">Team</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+     
+  
+   </div>
+</div>
+</section>
+
+
+      <!-- Footer -->
+      <footer
+              class="text-center text-lg-start text-white"
+              style="background-color: #1c2331; width: 100%;"
+              >
+        <!-- Section: Social media -->
+        <section
+                 class="d-flex justify-content-between p-4"
+                 style="background-color: #6351ce"
+                 >
+          <!-- Left -->
+          <div class="me-5">
+            <span>Follow Us On:</span>
+          </div>
+          <!-- Left -->
+    
+          <!-- Right -->
+          <div>
+            <a href="https://www.linkedin.com/company/ieee-kjsieit/about/" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://mobile.twitter.com/ieee_kjsieit" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <!-- <a href="#" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a> -->
+            <a href="https://www.instagram.com/ieee.kjsieit/?hl=en" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/IEEEKJSIEIT/" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- <a href="#" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a> -->
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section class="footer" style="align-items: center;">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="footermain" style="width: 90rem;display: inline-flex; @media only screen and (max-width:550px){
+             .footermain{
+              display: block;
+             }
+            }">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold">IEEE-KJSIT</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                    <p style="font-size: 14px;">
+                      KJSIT offers various programs, courses and degrees. Start your journey<br/>
+                      by finding the right one for you. Browse through and choose your calling,<br/>
+                      we are here to provide you with the best education.
+                    </p>
+              </div>
+    
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                    <p>
+                      <a href="../index.html#home" class="text-white" style="font-size: 14px; font-family: poppins;">Home</a>
+                    </p>
+                    <p>
+                      <a href="../index.html#about" class="text-white" style="font-size: 14px; font-family: poppins;">About</a>
+                    </p>
+                    <p>
+                      <a href="./teams.html" class="text-white" style="font-size: 14px; font-family: poppins;">Team</a>
+                    </p>
+                    <p>
+                      <a href="../events/events.html" class="text-white" style="font-size: 14px; font-family: poppins;">Events</a>
+                    </p>
+                    <p>
+                      <a href="../legacy/legacy.html" class="text-white" style="font-size: 14px; font-family: poppins;">Legacy</a>
+                    </p>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                    <p>
+                      <a href="../contact-form/contact_form.html" class="text-white" style="font-size: 14px; font-family: poppins;">Contact Us</a>
+                    </p>
+                <p><i class="fas fa-envelope mr-3"></i>ieee.tech@somaiya.edu</p>
+                <!-- <p><i class="fas fa-phone mr-3"></i> No.1</p>
+                <p><i class="fas fa-phone mr-3"></i> No.2</p> -->
+              </div>
+              <!-- Grid column -->
+              <div class="my-3 mb-lg-0" style="width:300px; height: 200px;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4018163827604!2d72.86889221537538!3d19.046063057861105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf21727f6e19%3A0x473006136ad440dc!2sK.%20J.%20Somaiya%20Institute%20of%20Engineering%20and%20Information%20Technology!5e0!3m2!1sen!2sin!4v1662920715713!5m2!1sen!2sin" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          © IEEE-KJSIT 2022 All rights reserved.
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer End-->
+
+
+
+
+    
+
+    <!--SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>

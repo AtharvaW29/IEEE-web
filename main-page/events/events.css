@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root{
+    /*COLORS*/
+    --primary-backcolor: #F84312;
+    --gradient-color: linear-gradient(-224deg, #1c99FE 20.69%, #7644FF 50.19%,var(--primary-backcolor) 79.69%);
+    --grey-color: #808080;
+    --bg-dark: #091020;
+    /*TEXT COLOR*/
+    --primary-font: 'Oswald', sans-serif;
+    --primary-text: #2b54d9;
+    --text-grey: #C0C0C0;
+    --text-white: #ffff;
+    --text-banner: #F84312;  
+  }
+  
+  h1{
+    font-size: 54px;
+    line-height: 68px;
+    font-weight: 800;
+    color:var(--text-white);
+    margin-bottom: 20px;
+  }
+  h1 span{
+    color:var(--primary-backcolor);
+  }
+  h2{
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #7644ff;
+    margin-bottom: 15px;
+  }
+  h3{
+    font-size: 20px;
+    font-weight: 600;
+    color:var(--text-grey);
+    margin-bottom: 20px;
+  }
+  h4{
+    font-size: 15px;
+    text-transform:uppercase;
+    letter-spacing: 4px;
+    display: block;
+    font-weight: 600;
+    color:#0563fb;
+    margin-bottom: 19px;
+  }
+  h5{
+    font-size: 15px;
+    text-transform:uppercase;
+    letter-spacing: 4px;
+    display: block;
+    font-weight: 600;
+    color:(--text-grey);
+    margin-bottom: 19px;
+  }
+  h6{
+    font-size: 15px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    display: block;
+    font-weight: 600;
+    color:#7644FF;
+    margin-bottom: 19px;
+  }
+  p{
+    color:var(--text-grey);
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  .subtitle{
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 28px;
+    margin-bottom: 12px;
+    background:var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+  }
+  body {
+    background: #002436;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    min-width: 1080px;
+  }
+   
+  /*Navbar!!*/
+   
+   .navbar-brand{
+    
+      font-family: 'Lato', sans-serif;
+      font-size: 100px;
+      margin: 0px;
+    
+  }
+  .header_wrapper .navbar{
+    padding:15px 0;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear;
+    margin-right: 5px;
+    background: #002436;
+  
+  }
+  .header_wrapper .navbar-brand img{
+    height:auto;
+  }
+  .header_wrapper .navbar-toggler{
+    border:0;
+    line-height: 6px;
+    color:#ffff;
+  }
+  .header_wrapper .nav-item{
+    margin: 0 20px;
+  }
+  .header_wrapper .nav-item .nav-link{
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-grey);
+    display: inline-block;
+  }
+  .header_wrapper .nav-item .nav-link::after{
+    position:absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2b54d9;
+    transition: 0.3s;
+    bottom:0;
+  }
+  .header_wrapper .nav-item .nav-link.active::after,
+  .header_wrapper .nav-item .nav-link:hover::after{
+    width: 100%;
+  }
+  .header_wrapper .nav-item .nav-link.active,
+  .header_wrapper .nav-item .nav-link:hover{
+    color: var(--text-white);
+  }
+  .header-scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#000000;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
+    box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
+  }
+  .header-scrolled .nav-item .nav-link.active,
+  .header-scrolled .nav-item .nav-link:hover{
+    color: var(--primary-text);
+  }
+  .header_wrapper .nav-item .contact-button {
+    display: inline-block;
+    padding: 0 24px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+.header_wrapper .nav-item .contact-button:hover {
+    background-color: rgba(255,255,255,0.2);
+  }
+
+.events_wrapper{
+    background: #002436;
+}
+.events_wrapper .container{
+    margin-top: 5rem;
+    background: #E0CA3C;
+}
+
+.events_wrapper .container .card{
+    margin: 5% 0%;
+  }
+  
+  .events_wrapper .container .card .card-body{
+    margin: 0% 0% 0% 3%;
+    padding: 6% 0%;
+  }
+  

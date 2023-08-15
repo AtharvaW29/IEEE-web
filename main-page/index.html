@@ -7,10 +7,10 @@
 
     <!-- FAVICON -->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/Images/favicon/site.webmanifest">
 
     <title>
         
@@ -79,16 +79,15 @@
 
     <header class="header_wrapper">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top" id="top-nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./" class="img-fluid" alt="logo2"> 
+            <img src="./assets/Images/Component1.png" class="img-fluid" alt="logo2"> 
          </a>
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-            data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+          <!-- <i class="fa-solid fa-bars-staggered"></i> -->
+        </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav menu-navbar-nav">
               <li class="nav-item">
@@ -98,13 +97,13 @@
                 <a class="nav-link" href="#about"><h5>About</h5></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./team/team.html"><h5>Team</h5></a>
+                <a class="nav-link" href="./team/teams.html"><h5>Team</h5></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!"><h5>Events</h5></a>
+                <a class="nav-link" href="./events/events.html"><h5>Events</h5></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!"><h5>Legacy</h5></a>
+                <a class="nav-link" href="./legacy/legacy.html"><h5>Legacy</h5></a>
               </li>
               <li class="nav-item">
                 <button class="contact-button">
@@ -113,22 +112,22 @@
             </ul>
             <ul class="navbar-nav d-flex flex-row">
               <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="#!">
+                <a class="nav-link" href="https://www.linkedin.com/company/ieee-kjsieit/about/">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
               <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="#!">
+                <a class="nav-link" href="https://mobile.twitter.com/ieee_kjsieit">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="#!">
+                <a class="nav-link" href="https://www.instagram.com/ieee.kjsieit/?hl=en">
                   <i class="fab fa-instagram"></i>
                 </a>
               </li>
               <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="#!">
+                <a class="nav-link" href="https://www.facebook.com/IEEEKJSIEIT/">
                   <i class="fab fa-facebook"></i>
                 </a>
               </li>
@@ -138,54 +137,69 @@
       </nav>
       <!-- Navbar -->
     </header>
+
+    <script>
+      let nav = document.querySelector(".navbar");
+window.onscroll = function () {
+if(document.documentElement.scrollTop > 20){
+nav.classList.add("header-scrolled");
+}
+else{
+nav.classList.remove("header-scrolled");
+}
+}
+
+// Menu Hide
+let navBar= document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function(a){
+a.addEventListener("click", function(){
+navCollapse.classList.remove("show");
+})
+})
+</script>
     <!--Nav-End-->
 
+    
     <!--Gallery-->
 <section id="home" class="gallery_wrapper">
-  
   <figure class="snip1543">
-    <img src="./contact-form/wp7964596-lewis-hamilton-f1-ch.png" alt="sample108" /> <!--use image size 479 x 550-->
+    <img src="./assets/Images/gallery/vidyalankarevent.jpg" alt="sample108" /> <!--use image size 479 x 550-->
     <figcaption>
-      <h3>Inverness McKenzie</h3>
-      <p>The only skills I have the patience to learn are those that have no real application in life.</p>
+      <h3>Study Abroad Seminar</h3>
+      <p style="font-size: 22px;">Sponsored by VidyaLankar.</p>
     </figcaption>
-    <a href="#"></a>
   </figure>
-  <figure class="snip1543"><img src="./contact-form/wp7964596-lewis-hamilton-f1-ch.png" alt="sample100" />
+  <figure class="snip1543"><img src="./assets/Images/gallery/deathrace.jpg" alt="sample100" />
     <figcaption>
-      <h3>Alan Fresco</h3>
-      <p>The real fun of living wisely is that you get to be smug about it.</p>
+      <h3>Death Race Event</h3>
+      <p style="font-size: 22px;">An Ingeneous Way of Racing</p>
     </figcaption>
-    <a href="#"></a>
   </figure>
-  <figure class="snip1543"><img src="./contact-form/wp7964596-lewis-hamilton-f1-ch.png" alt="sample101" />
+  <figure class="snip1543"><img src="./assets/Images/gallery/smokescreen.jpg" alt="sample101" />
     <figcaption>
-      <h3>Indigo Violet</h3>
-      <p>But Calvin is no kind and loving god! He's one of the old gods! He demands sacrifice! </p>
+      <h3>Smoke Screen</h3>
+      <p style="font-size: 22px">Do you watch & code OR code & watch?!</p>
     </figcaption>
-    <a href="#"></a>
   </figure>
   <figure class="snip1543">
-    <img src="./contact-form/wp7964596-lewis-hamilton-f1-ch.png" alt="sample108" />
+    <img src="./assets/Images/gallery/ar-vr.jpg" alt="sample108" />
     <figcaption>
-      <h3>Inverness McKenzie</h3>
-      <p>The only skills I have the patience to learn are those that have no real application in life.</p>
+      <h3>AR/VR Experience Zone</h3>
+      <p style="font-size: 22px;">Thrill Your Senses!</p>
     </figcaption>
-    <a href="#"></a>
   </figure>
-  <figure class="snip1543"><img src="./contact-form/wp7964596-lewis-hamilton-f1-ch.png" alt="sample100" />
+  <figure class="snip1543"><img src="./assets/Images/gallery/FIFA-22.jpg" alt="sample100" />
     <figcaption>
-      <h3>Alan Fresco</h3>
-      <p>The real fun of living wisely is that you get to be smug about it.</p>
+      <h3>FIFA 22</h3>
+      <p style="font-size: 22px;">Whats's better than plain old football ? <br/> FIFA-22!</p>
     </figcaption>
-    <a href="#"></a>
   </figure>
-  <figure class="snip1543"><img src="./contact-form/wp7964596-lewis-hamilton-f1-ch.png" alt="sample101" />
+  <figure class="snip1543"><img src="./assets/Images/gallery/TPP.JPG" alt="sample101" />
     <figcaption>
-      <h3>Indigo Violet</h3>
-      <p>But Calvin is no kind and loving god! He's one of the old gods! He demands sacrifice! </p>
+      <h3>Technical Paper Presentation</h3>
+      <p style="font-size: 22px">A Technical Paper Presentation Workshop </p>
     </figcaption>
-    <a href="#"></a>
   </figure>
     </section>
   <!--Gallery End-->
@@ -201,39 +215,25 @@
         <div class="com-sm-12 text-center mb-4">
           <div class="my-3 mb-lg-0">
           <span class="subtitle">About</span>
-            <h2>IEEE-KJSIEIT</h2>
-            <p>The lorem ipsum is a placeholder text used in publishing and graphic design.<br class="d-none 
-              d-md-block"> This filler text is a short paragraph that contains all the letters of the alphabet.<br class="d-none 
-              d-md-block">The characters are spread out evenly so that the reader's attention is focused on the layout
-              of the text instead of its content.<br class="d-none 
-              d-md-block"> This filler text is a short paragraph that contains all the letters of the alphabet.<br class="d-none 
-              d-md-block">The characters are spread out evenly so that the reader's attention is focused on the layout
-              of the text instead of its content.<br class="d-none 
-              d-md-block"> This filler text is a short paragraph that contains all the letters of the alphabet.<br class="d-none 
-              d-md-block">The characters are spread out evenly so that the reader's attention is focused on the layout
-              of the text instead of its content</p>
+            <h2>KJ Somaiya Institute of  Technology</h2>
+            <p>KJSIT has been accredited by NAAC with 'A' grade(3.21 CGPA) for 5 years now.
+              Three programs of KJSIT have been accredited by National Board of Accreditation(NBA).
+              KJSIT has been presented the Best College Award by the University of Mumbai for A.Y. 
+              2018-19(Urban Region), CSI(Mumbai Chapter) and ISTE(MH and Goa Section). IEEE KJSIT commits 
+              to To foster technological innovation and excellence for the benefit of humanity. To nurture
+              and promote innovative technical ideas in the technical fields. To solicit, refine and 
+              quality technical information. To support personal development on all fronts in an individual.
+              </p>
+              <a href="https://kjsieit.s3.ap-south-1.amazonaws.com/Student+Life/Student+Tech-Pro+Committees/IEEE+21-22.pdf">Read More</a>
 
     
         <div class="card">
           <div class="imgBx">
-            <img src="https://assets.codepen.io/4164355/shoes.png">
+            <img src="./assets/Images/profile/principal.png">
           </div>
           <div class="contentBx">
-            <h2 style="color: rgb(12, 66, 131)">Dr. Suresh Ukarande</h2>
-            <!-- <div class="size">
-              <h3>Size :</h3>
-              <span>7</span>
-              <span>8</span>
-              <span>9</span>
-              <span>10</span>
-            </div>
-            <div class="color">
-              <h3>Color :</h3>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div> -->
-            <a href="#">Read More</a>
+            <h2 style="color: rgb(12, 66, 131);margin-top: 3rem; font-size: 24px;">Dr. Suresh Ukarande</h2>
+            <a href="https://kjsit.somaiya.edu.in/en/principal-words">Read More</a>
           </div>
         </div>
     
@@ -242,19 +242,20 @@
         </rect>
       </svg>
       <div id="What_is_a_paragraph_Paragraphs">
-        <span>What is a paragraph?</span><br/><span style="font-style:normal;font-weight:normal;">Paragraphs are the building blocks of papers. Many students define paragraphs 
-          in terms of length: a paragraph is a group<br/>of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas 
-          among<br/>sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that form<br/> a unit” (Lunsford and Connors 
-          116). Length and appearance do not determine whether a section in a paper is a paragraph.<br/>For instance, in some styles of writing, particularly journalistic styles,
-          a paragraph can be just one sentence long. Ultimately,<br/>a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer 
-          to this as the<br/>“controlling idea,” because it controls what happens in the rest of the paragraph.<br/></span><br/><br/>
-         <span>How do I decide what to put in a paragraph?</span><br/>
-          <span style="font-style:normal;font-weight:normal;">Before you can begin to determine what the composition of a particular paragraph will be, you must first
-             decide on an<br/>argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to<br/>your reader? The 
-             information in each paragraph must be related to that idea. In other words, your paragraphs should<br/>remind your reader that there is a recurrent relationship 
-             between your thesis and the information in each paragraph. A<br/>working thesis functions like a seed from which your paper, and your ideas, will grow. The whole 
-             process is an organic one<br/>a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas<br/>in 
-             the paper.</span>
+        <span> <h1>Dr. Suresh Ukarande</h1><br/>
+        <h5>Principal, KJSIT</h5><br/>
+        <span style="font-style:normal;font-weight:normal;"> 
+          <br/><p style="font-style: italic;">With an ideology that the root of innovation is ‘Interest’, the curriculum offers a wide range of elective courses <br/>
+             grouped into core and inter-disciplinary domains. At par with international engineering education, the students <br/> can choose 
+             to study courses concerning areas of their interests.</p>
+          <p>
+            KJ Somaiya Institute of  Technology (KJSIT) provides quality education to engineering students. We motivate, <br/> 
+            facilitate and guide our students by providing lifelong learning  opportunities in a conducive learning <br/> environment.
+          The role of engineers for shaping the modern world is incredible. Hence the ultimate aim of any <br/> distinguished  technical education
+          institute should be to promote a multifaceted development of the students.
+        </p></span></span>
+         
+
       </div>
     
 
@@ -266,42 +267,29 @@
   
       
       <div id="Paragraphs_2">
-        <span>What is a paragraph?</span><br/><span style="font-style:normal;font-weight:normal;">Paragraphs are the building blocks of papers. Many students define paragraphs 
-          in terms of length: a paragraph is a group<br/>of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas 
-          among<br/>sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that form<br/> a unit” (Lunsford and Connors 
-          116). Length and appearance do not determine whether a section in a paper is a paragraph.<br/>For instance, in some styles of writing, particularly journalistic styles,
-           a paragraph can be just one sentence long. Ultimately,<br/>a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer 
-           to this as the<br/>“controlling idea,” because it controls what happens in the rest of the paragraph.<br/></span><br/><span>How do I decide what to put in a paragraph?
-           </span><br/><span style="font-style:normal;font-weight:normal;">Before you can begin to determine what the composition of a particular paragraph will be, you must first
-           decide on an<br/>argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to<br/>your reader? The 
-           information in each paragraph must be related to that idea. In other words, your paragraphs should<br/>remind your reader that there is a recurrent relationship 
-           between your thesis and the information in each paragraph. A<br/>working thesis functions like a seed from which your paper, and your ideas, will grow. The whole 
-           process is an organic one<br/>a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas<br/>in 
-           the paper.</span>
+        <span> <h1>Dr. Sunita Patil</h1><br/>
+          <h5>Vice-Principal, KJSIT</h5><br/>
+          <span style="font-style:normal;font-weight:normal;"> 
+            <br/><p style="font-style: italic;">KJSIT's Undergraduate and Postgraduate programs are focused for the academic as well as all-round professional,<br/> 
+              holistic and social development of its students through an array of multi-skilled, professional, extension, co- <br/> curricular, extracurricular and
+              lifelong learning activities.</p>
+            <p>
+              The Institute is not only looking at the academic growth of the students but also trying its best for the all - <br/> round professional and social development
+              through various professional international, national bodies such as <br/> IEEE, IETE, CSI, IET, ISTE, IEI. K J Somaiya Institute of  Technology is attaining great
+               heights under the auspices <br/> of our Somaiya Trust Chairman, Hon. Shri Samir Somaiya, guidance of Secretary,  Hon. Lt. Gen Jagbir
+               Singh, <br/> Provost Hon. Prof. V. N. Rajasekharan Pillai  and Principal, Dr. Suresh K. Ukarande.
+          </p></span></span>
       </div>
       
     
     
       <div class="card2">
         <div class="imgBx2">
-          <img src="https://assets.codepen.io/4164355/shoes.png">
+          <img src="./assets/Images/profile/vice-principal.png">
         </div>
         <div class="contentBx2">
-          <h2 style="color: rgb(12, 66, 131)">Vice-Principal</h2>
-          <!-- <div class="size">
-            <h3>Size :</h3>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-          </div>
-          <div class="color2">
-            <h3>Color :</h3>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div> -->
-          <a href="#">Read More</a>
+          <h2 style="color: rgb(12, 66, 131); margin-top: 3rem; font-size: 24px;">Dr. Sunita Patil</h2>
+          <a href="https://kjsit.somaiya.edu.in/en/vice-principal-words">Read More</a>
         </div>
       </div>
     
@@ -311,24 +299,11 @@
 
        <div class="card3">
         <div class="imgBx3">
-          <img src="https://assets.codepen.io/4164355/shoes.png">
+          <img src="./assets/Images/profile/Prof.SandeepMishra.png">
         </div>
         <div class="contentBx3">
-          <h2 style="color: rgb(12, 66, 131)">Prof. Sandeep Mishra</h2>
-          <!-- <div class="size">
-            <h3>Size :</h3>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-          </div>
-          <div class="color3">
-            <h3>Color :</h3>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div> -->
-          <a href="#">Read More</a>
+          <h2 style="color: rgb(12, 66, 131); margin-top: 3rem; font-size: 24px;">Prof. Sandeep Mishra</h2>
+          <!-- <a href="https://kjsieit.s3.ap-south-1.amazonaws.com/Student+Life/Student+Tech-Pro+Committees/IEEE+21-22.pdf">Read More</a> -->
         </div>
       </div>
 
@@ -337,42 +312,31 @@
         </rect>
       </svg>
       <div id="Paragraphs-3">
-        <span>What is a paragraph?</span><br/><span style="font-style:normal;font-weight:normal;">Paragraphs are the building blocks of papers. Many students define paragraphs 
-          in terms of length: a paragraph is a group<br/>of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas 
-          among<br/>sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that form<br/> a unit” (Lunsford and Connors 
-          116). Length and appearance do not determine whether a section in a paper is a paragraph.<br/>For instance, in some styles of writing, particularly journalistic styles,
-          a paragraph can be just one sentence long. Ultimately,<br/>a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer 
-          to this as the<br/>“controlling idea,” because it controls what happens in the rest of the paragraph.<br/></span><br/><span>How do I decide what to put in a paragraph?
-
-          </span><br/><span style="font-style:normal;font-weight:normal;">Before you can begin to determine what the composition of a particular paragraph will be, you must first
-             decide on an<br/>argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to<br/>your reader? The 
-             information in each paragraph must be related to that idea. In other words, your paragraphs should<br/>remind your reader that there is a recurrent relationship 
-             between your thesis and the information in each paragraph. A<br/>working thesis functions like a seed from which your paper, and your ideas, will grow. The whole 
-             process is an organic one<br/>a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas<br/>in 
-             the paper.</span>
+        <span><h1>Prof. Sandeep Mishra</h1><br/>
+          <h5>IEEE Counsellor, KJSIT</h5><br/>
+          <span style="font-style:normal;font-weight:normal;"> 
+            <br/><p style="font-style: italic;">We at KJSIT are focused at student's all round academic and personal development. I believe the IEEE <br/> 
+              provides a professional and capable platform for multi-skilled, professional, co-curricular, extracurricular <br/> and
+              lifelong learning activities which develop an efficient engineer down the road.</p>
+            <p>
+              Institute of Electrical and Electronics Engineers (IEEE) is an international professional technical body of <br/>
+              electrical engineers and people from associated disciplines. IEEE takes an active part in all the technical 
+              events <br/> held in the college. IEEE conducts various technical and non-technical fun events during the annual 
+              technical <br/> festival of KJSIT, Renaissance. It also conducts various seminars and workshops round the year,
+              which help <br/> students gain an insight and equips them with the current needs and requirements of the industries.
+          </p></span></span>
       </div> 
+
 
 
       <div class="card4">
         <div class="imgBx4">
-          <img src="https://assets.codepen.io/4164355/shoes.png">
+          <img src="./assets/Images/profile/Prof.PranaliHatode.png">
         </div>
         <div class="contentBx4">
-          <h2 style="color: rgb(12, 66, 131)">Prof. Pranali Hatode</h2>
-          <!-- <div class="size4">
-            <h3>Size :</h3>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-          </div>
-          <div class="color4">
-            <h3>Color :</h3>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div> -->
-          <a href="#">Read More</a>
+          <h2 style="color: rgb(12, 66, 131); margin-top: 3rem; font-size: 24px;">Prof. Pranali Hatode</h2>
+
+          <!-- <a href="https://kjsieit.s3.ap-south-1.amazonaws.com/Student+Life/Student+Tech-Pro+Committees/IEEE+21-22.pdf">Read More</a> -->
         </div>
       </div>
 
@@ -381,19 +345,20 @@
         </rect>
       </svg>
       <div id="Paragraphs-4">
-        <span>What is a paragraph?</span><br/><span style="font-style:normal;font-weight:normal;">Paragraphs are the building blocks of papers. Many students define paragraphs 
-          in terms of length: a paragraph is a group<br/>of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas 
-          among<br/>sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that form<br/> a unit” (Lunsford and Connors 
-          116). Length and appearance do not determine whether a section in a paper is a paragraph.<br/>For instance, in some styles of writing, particularly journalistic styles,
-          a paragraph can be just one sentence long. Ultimately,<br/>a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer 
-          to this as the<br/>“controlling idea,” because it controls what happens in the rest of the paragraph.<br/></span><br/><span>How do I decide what to put in a paragraph?
-
-          </span><br/><span style="font-style:normal;font-weight:normal;">Before you can begin to determine what the composition of a particular paragraph will be, you must first
-             decide on an<br/>argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to<br/>your reader? The 
-             information in each paragraph must be related to that idea. In other words, your paragraphs should<br/>remind your reader that there is a recurrent relationship 
-             between your thesis and the information in each paragraph. A<br/>working thesis functions like a seed from which your paper, and your ideas, will grow. The whole 
-             process is an organic one<br/>a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas<br/>in 
-             the paper.</span>
+        <span><h1>Prof. Pranali Hatode</h1><br/>
+          <h5>IEEE Coordinator, KJSIT</h5><br/>
+          <span style="font-style:normal;font-weight:normal;"> 
+            <br/><p style="font-style: italic;">With its vision and mission in mind, The IEEE will always
+              continue to uplift the engineers to get up skilled <br/> and develop a
+              foresight in their respective fields for the betterment of
+              themselves and the society at large, <br/> wherever they may be. </p>
+            <p>
+              Here at IEEE we promote and conduct technical education programmes for Human Research Development. <br/>
+              To develop a volunteered environment where technical thoughts leaders converge  and  create communities <br/>
+              for people working in various fields. Followed by organization of technical gatherings to foster innovation<br/>
+              and interchange. which helps students learn about new technologies in upcoming fields in an interesting and <br/>
+              carefree manner, as well as help them groom themselves and their personality.
+          </p></p></span>
       </div> 
 
     </div>
@@ -419,30 +384,30 @@
                  >
           <!-- Left -->
           <div class="me-5">
-            <span>Get connected with us on social networks:</span>
+            <span>Follow Us On :</span>
           </div>
           <!-- Left -->
     
           <!-- Right -->
           <div>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-white me-4">
+            <a href="https://www.linkedin.com/company/ieee-kjsieit/about/" class="text-white me-4">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="#" class="text-white me-4">
-              <i class="fab fa-github"></i>
+            <a href="https://mobile.twitter.com/ieee_kjsieit" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
             </a>
+            <!-- <a href="#" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a> -->
+            <a href="https://www.instagram.com/ieee.kjsieit/?hl=en" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/IEEEKJSIEIT/" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- <a href="#" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a> -->
           </div>
           <!-- Right -->
         </section>
@@ -456,15 +421,15 @@
               <!-- Grid column -->
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
-                <h6 class="text-uppercase fw-bold">IEEE-KJSIEIT</h6>
+                <h6 class="text-uppercase fw-bold">IEEE-KJSIT</h6>
                 <hr
                     class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px"
                     />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
+                <p style="font-size: 14px;">
+                  KJSIT offers various programs, courses and degrees. Start your journey
+                  by finding the right one for you. Browse through and choose your calling,
+                  we are here to provide you with the best education.
                 </p>
               </div>
     
@@ -477,19 +442,19 @@
                     style="width: 60px; background-color: #7c4dff; height: 2px"
                     />
                 <p>
-                  <a href="http://127.0.0.1:5501/index.html#home" class="text-white">Home</a>
+                  <a href="./index.html#home" class="text-white" style="font-size: 14px; font-family: poppins;">Home</a>
                 </p>
                 <p>
-                  <a href="http://127.0.0.1:5501/index.html#about" class="text-white">About</a>
+                  <a href="./index.html#about" class="text-white" style="font-size: 14px; font-family: poppins;">About</a>
                 </p>
                 <p>
-                  <a href="#!" class="text-white">Team</a>
+                  <a href="./team/teams.html" class="text-white" style="font-size: 14px; font-family: poppins;">Team</a>
                 </p>
                 <p>
-                  <a href="#!" class="text-white">Events</a>
+                  <a href="./events/events.html" class="text-white" style="font-size: 14px; font-family: poppins;">Events</a>
                 </p>
                 <p>
-                  <a href="#!" class="text-white">Legacy</a>
+                  <a href="./legacy/legacy.html" class="text-white" style="font-size: 14px; font-family: poppins;">Legacy</a>
                 </p>
               </div>
               <!-- Grid column -->
@@ -503,11 +468,11 @@
                     style="width: 60px; background-color: #7c4dff; height: 2px"
                     />
                     <p>
-                      <a href="http://127.0.0.1:5501/contact-form/contact_form.html#!" class="text-white">Contact Us</a>
+                      <a href="http://127.0.0.1:5501/contact-form/contact_form.html" class="text-white" style="font-size: 14px; font-family: poppins;">Contact Us</a>
                     </p>
                 <p><i class="fas fa-envelope mr-3"></i>ieee.tech@somaiya.edu</p>
-                <p><i class="fas fa-phone mr-3"></i> No.1</p>
-                <p><i class="fas fa-phone mr-3"></i> No.2</p>
+                <!-- <p><i class="fas fa-phone mr-3"></i> No.1</p> -->
+                <!-- <p><i class="fas fa-phone mr-3"></i> No.2</p> -->
               </div>
               <!-- Grid column -->
               <div class="my-3 mb-lg-0" style="width:400px">
@@ -524,7 +489,7 @@
              class="text-center p-3"
              style="background-color: rgba(0, 0, 0, 0.2)"
              >
-          © IEEE-KJSIEIT 2022 All rights reserved.
+          © IEEE-KJSIT 2022 All rights reserved.
         </div>
         <!-- Copyright -->
       </footer>
@@ -537,8 +502,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     </body>
-
-
-
 
 
